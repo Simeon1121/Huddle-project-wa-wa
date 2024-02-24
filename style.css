@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url(assets/bg-mobile.svg);
+  /* background-image: url(assets/bg-mobile.svg);
   /* background-repeat: no-repeat;
   background-color: hsl(257, 40%, 49%); */
   background: no-repeat url(assets/bg-mobile.svg) hsl(257, 40%, 49%);
@@ -15,55 +15,120 @@ body {
   font-weight: 400;
   background-size: cover;
 }
-
 /* utilities */
-.container{
-    width: 90%;
-    margin: auto;
+.container {
+  width: 90%;
+  margin: auto;
 }
 /* nav styling */
-nav img{
-    width: 41%;
+nav img {
+  width: 41%;
 }
-nav{
-    padding-top: 2rem;
+nav {
+  padding-top: 2rem;
 }
 /* main styling */
-.main{
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 32rem;
+.main {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 32rem;
 }
-.main img{
-max-width: 100%;
+.main img {
+  max-width: 100%;
 }
-.main-inner-text{
-display: flex;
-flex-direction: column;
-gap: 20px;
-text-align: center;
+.main-inner-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.main-inner-text h2 {
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+.main-inner-text p {
+  color: azure;
+  width: 85%;
+  margin: auto;
+}
+.main-inner-text button {
+  width: 70%;
+  height: 2rem;
+  margin: auto;
+  border: none;
+  border-radius: 2rem;
+  color: hsl(300, 69%, 71%);
+  box-shadow: -1px 2px 5px rgb(70, 68, 68);
+}
+.reflect {
+  font-family: "poppins", sans-serif;
+  font-weight: 700;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* height: 2rem; */
+  margin: auto;
+  border: none;
+  width: 20%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 
+@media (min-width: 1024) {
+  body {
+    background: url(assets/bg-desktop.svg);
+    font-family: "open sans" sans-serif;
+    font-weight: 400;
+    background-size: cover;
+    background-position-x: 2%;
+  }
+  /* nav area */
+  nav img {
+    width: 30%;
+  }
+  .main {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .main-inner-text {
+    text-align: left;
+    width: 40%;
+    margin-right: auto;
+    margin-left: 3rem;
+    height: 40%;
+    margin-top: 5%;
+    margin-bottom: auto;
+  }
 }
-.main-inner-text h2{
-    font-family: "poppins", sans-serif;
-    font-weight: 600;
-    color: white;
-
+.main-inner-text button {
+  margin: 0;
+  width: 50%;
+  height: 2.5rem;
 }
-.main-inner-text p{
-    color: azure;
-    width: 85%;
-    margin: auto;
+.main-inner-text p {
+  margin: 0;
+  width: 25rem;
 }
-.main-inner-text button{
-    width: 70%;
-    height: 2rem;
-    margin: auto;
-    border: none;
-    border-radius: 2rem;
-    color: hsl(300, 69%, 71%);
-    box-shadow: -1px 2px 5px rgb(70, 68, 68);
-
+.main img {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+}
+.reflect {
+  font-family: "poppins", sans-serif;
+  font-weight: 700;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  border: none;
+  width: 10%;
+  margin-right: 10%;
+  margin-bottom: 50px;
 }
